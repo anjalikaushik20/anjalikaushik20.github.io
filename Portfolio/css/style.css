@@ -2,6 +2,88 @@
   box-sizing: border-box;
 }
 
+body, html{
+  height: 100%;
+  margin: 0;
+}
+
+.bg {
+  background-image: url("../images/jumbotron.jpg");
+  height: 50%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 #header-nav{
-  background-color: ;
+  background-color: #000;
+  opacity: 0.2;
+  height: 80px;
+  border-radius: 0;
+  border: 0;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+#head-container{
+  background-color: #ffffff;
+  opacity: 0.5;
+  width: 50%;
+  height: 40%;
+  padding: 5px;
+}
+#head-name{
+  text-align: center;
+  color: black;
+  opacity: 0.8;
+  padding-top: 20px 10px 10px 10px;
+}
+#head-content{
+  color: black;
+  opacity: 0.8;
+}
+
+/************** MEDIA QUERRIES ****************/
+/************** LARGE DEVICES ONLY ************/
+@media (min-width: 992px) {
+  #head-name{
+    font-size: 50px;
+  }
+  #head-content{
+    font-size: 25px;
+  }
+}
+
+/************* MEDIUM DEVICES ONLY ****************/
+@media query (min-width: 768px) and (max-width: 991px) {
+  #head-name{
+    font-size: 40px;
+  }
+  #head-content{
+    font-size: 20px;
+  }
+}
+
+/************** SMALL DEVICES ONLY *****************/
+@media query (min-width: 480px) and (max-width: 767px) {
+  #head-name{
+    font-size: 30px;
+  }
+  #head-content{
+    font-size: 15px;
+  }
+}
+
+/************** EXTRA SMALL DEVICES *****************/
+@media (max-width: 479px) {
+  #head-name{
+    font-size: 20px;
+  }
+  #head-content{
+    font-size: 10px;
+  }
 }
