@@ -18,21 +18,25 @@ body, html{
 
 #header-nav{
   background-color: #000;
-  opacity: 0.2;
+  opacity: 0.5;
   height: 80px;
   border-radius: 0;
   border: 0;
 }
+/*
 .sticky {
   position: fixed;
   top: 0;
   width: 100%;
+}*/
+.navbar-dark .nav-item{
+  color: white;
 }
 
 #head-container{
   background-color: #ffffff;
   opacity: 0.5;
-  width: 50%;
+  width: 60%;
   height: 40%;
   padding: 5px;
 }
@@ -47,6 +51,27 @@ body, html{
   opacity: 0.8;
 }
 
+#image{
+  margin-left: 100px;
+  padding: 30px;
+}
+
+#AboutMe{
+  background-color: white;
+}
+#head-about{
+  text-align: center;
+  color: black;
+  padding: 10px;
+}
+#list-about{
+  color: black;
+  padding: 30px;
+}
+
+#MyProjects{
+  background-color: black;
+}
 /************** MEDIA QUERRIES ****************/
 /************** LARGE DEVICES ONLY ************/
 @media (min-width: 992px) {

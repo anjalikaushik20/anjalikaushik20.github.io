@@ -14,8 +14,8 @@
   <body>
 
     <div class="bg">
-      <header>
-        <nav id="header-nav" class="navbar navbar-expand-lg sticky">
+      <header class="sticky">
+        <nav id="header-nav" class="navbar navbar-expand-lg navbar-dark">
           <div class="navbar-header">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -23,16 +23,16 @@
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav">
                 <li id="home" class="nav-item active">
-                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="AnjaliKaushik.html">Home</a>
                 </li>
                 <li id="about" class="nav-item">
-                  <a class="nav-link" href="#">About</a>
+                  <a class="nav-link" href="#AboutMe">About</a>
                 </li>
                 <li id="projects" class="nav-item">
-                  <a class="nav-link" href="#">Projects</a>
+                  <a class="nav-link" href="#MyProjects">Projects</a>
                 </li>
                 <li id="contact" class="nav-item">
-                  <a class="nav-link" href="#">Contact</a>
+                  <a class="nav-link" href="#ContactMe">Contact</a>
                 </li>
               </ul>
             </div>
@@ -51,7 +51,49 @@
 
     <div id="main-content" class="container">
 
+      <section id="AboutMe" class="col-md-12">
+        <h2 id="head-about">About Me</h2>
+        <div class="row">
+          <div id="image" class="col-sm-4">
+            <img src="images/Anjali.jpg" alt="Anjali Kaushik" height="300px" width="250px;">
+          </div>
+
+          <div id="list-about" class="col-sm-6">
+            <ul>
+              <li>Pursuing BTech @ Vellore Institute of Technology, Bhopal</li>
+              <li>Apt Communication Skills</li>
+              <li>Team Leadership</li>
+              <li>Android Application Developer (Intermediate)</li>
+              <li>Machine Learning Enthusiast (Beginner)</li>
+              <li>Familiar Technologies:
+                <ul>
+                  <li>C</li>
+                  <li>C++</li>
+                  <li>JAVA</li>
+                  <li>Python</li>
+                </ul>
+              </li>
+              <li>Softwares and Frameworks:
+                <ul>
+                  <li>Android Studio</li>
+                  <li>Flutter</li>
+                  <li>MS Office</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
     </div>
+
+    <section id="MyProjects">
+
+      <div class="row">
+
+      </div>
+
+    </section>
 
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
