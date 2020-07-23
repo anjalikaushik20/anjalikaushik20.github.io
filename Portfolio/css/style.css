@@ -72,6 +72,38 @@ body, html{
 #MyProjects{
   background-color: black;
 }
+
+/************* FOOTER ********************/
+.panel-footer{
+  margin-top: 30px;
+  padding-top: 35px;
+  padding-bottom: 30px;
+  background-color: lightgray;
+  border-top: 0;
+}
+
+.panel-footer div.row{
+  margin-bottom: 35px;
+}
+#hours, #address{
+  line-height: 1.3em;
+}
+#contact > span, #address > span, #social > span{
+  font-size: 1.3em;
+}
+#address p{
+  color: black;
+  font-size: 0.8em;
+  line-height: 1.8;
+}
+#testimonials{
+  font-style: italic;
+}
+#social-div{
+  display:inline;
+}
+/********************* END OF FOOTER ************/
+
 /************** MEDIA QUERRIES ****************/
 /************** LARGE DEVICES ONLY ************/
 @media (min-width: 992px) {
@@ -110,5 +142,9 @@ body, html{
   }
   #head-content{
     font-size: 10px;
+  }
+
+  #image{
+    padding-left: 10px;
   }
 }
