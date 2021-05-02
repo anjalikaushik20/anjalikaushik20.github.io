@@ -23,6 +23,11 @@ body, html{
   border-radius: 0;
   border: 0;
 }
+
+.active{
+  color: white;
+}
+
 /*
 .sticky {
   position: fixed;
@@ -177,7 +182,7 @@ h3.project-title {
 }
 
 /************* MEDIUM DEVICES ONLY ****************/
-@media query (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 991px) {
   #head-name{
     font-size: 40px;
   }
@@ -187,7 +192,7 @@ h3.project-title {
 }
 
 /************** SMALL DEVICES ONLY *****************/
-@media query (min-width: 480px) and (max-width: 767px) {
+@media (min-width: 480px) and (max-width: 767px) {
   #head-name{
     font-size: 30px;
   }
