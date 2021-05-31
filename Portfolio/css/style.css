@@ -170,33 +170,53 @@ h3.project-title {
 }
 
 /************* FOOTER ********************/
+#contactme{
+  background-color: black;
+  text-decoration-color: white;
+  margin-top: 40px;
+}
 .panel-footer{
-  margin-top: 30px;
-  padding-top: 35px;
-  padding-bottom: 30px;
-  background-color: lightgray;
+  margin-top: 0px;
+  padding-top: 0px;
+  padding-bottom:0px;
+  background-color: black;
   border-top: 0;
+  color: white;
 }
 
 .panel-footer div.row{
-  margin-bottom: 35px;
+  margin-bottom: 0px;
+  color: white;
+  text-decoration-color: white;
 }
 #hours, #address{
   line-height: 1.3em;
+  color: white;
+  text-decoration-color: white;
 }
 #contact > span, #address > span, #social > span{
-  font-size: 1.3em;
+  font-size: 1.2em;
+  color: white;
+  text-decoration-color: white;
 }
 #address p{
-  color: black;
+  color: white;
   font-size: 0.8em;
   line-height: 1.8;
+  text-decoration-color: white;
 }
 #testimonials{
   font-style: italic;
+  color: white;
+  text-decoration-color: white;
 }
 #social-div{
   display:inline;
+  color: white;
+  text-decoration-color: white;
+}
+#copy-right{
+  color: whitesmoke;
 }
 /********************* END OF FOOTER ************/
 
