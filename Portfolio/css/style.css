@@ -73,6 +73,11 @@ body, html{
   padding-left: 60px;
 }
 
+#list-menu{
+  background-color: black;
+  opacity: 0.5;
+}
+
 #main-name{
   text-align: center;
   color:white;
@@ -87,7 +92,8 @@ body, html{
   opacity: 1.0;
   text-align: center;
   text-decoration-color: white;
-  background-color: transparent;
+  background-color: black;
+  opacity: 0.5;
 }
 /************* IMAGE *********/
 /*
