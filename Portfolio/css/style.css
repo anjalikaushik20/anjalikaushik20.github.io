@@ -73,11 +73,6 @@ body, html{
   padding-left: 60px;
 }
 
-#list-menu{
-  background-color: black;
-  opacity: 0.5;
-}
-
 #main-name{
   text-align: center;
   color:white;
@@ -108,10 +103,67 @@ body, html{
   margin-left: 20px;
   padding: 0px;
   align-self: center;
+  border-radius: 5%;
 }
 #picture:hover{
-  box-shadow: 0 1px 5px 1px wheat;
+  box-shadow: 0 1px 5px 1px black;
 }
+#picture{
+  border-radius: 5%;
+}
+/*************************** Table *********************/
+#table-menu{
+  background-color: black;
+  opacity: 0.5;
+  border-radius: 5%;
+  padding-top: 10px;
+  text-align: center;
+}
+td{
+  padding: 30px;
+  border-bottom: 1px solid white;
+  text-size-adjust: 40px;
+}
+#about{
+  border-top: 1px solid white;
+}
+tr:hover{
+  background-color: darkslategrey;
+}
+table{
+  text-size-adjust: 30px;
+}
+
+/*************************** Link**********************/
+
+/*************************** List **********************/
+/*
+#list-menu{
+  background-color: black;
+  opacity: 0.5;
+  border-radius: 5%;
+}
+#list-menu{
+  padding-top: 20px;
+  text-align: center;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+  border: 1px solid dimgray;
+  border-radius: 5%;
+}
+
+ul li {
+  padding: 32px 48px;
+  border-bottom: 1px solid dimgray;
+  border-radius: 5%;
+}
+
+ul li:last-child {
+  border-bottom: none
+}
+*/
 /********************** My Projects *****************/
 #MyProjects{
   background-color: #f0f0f0;
@@ -169,7 +221,41 @@ h3.project-title {
   font-style: italic;
 }
 
+/************************* New Footer *******************/
+#contact-me{
+  background-color: darkslategrey;
+  text-decoration-color: black;
+  margin-top: 40px;
+}
+div.row{
+  margin-bottom: 0px;
+  color: black;
+  text-decoration-color: black;
+}
+#hours, #address{
+  line-height: 1.3em;
+  text-decoration-color: black;
+}
+#contact > span, #address > span, #social-media > span{
+  font-size: 1.2em;
+  text-decoration-color: black;
+}
+#address p{
+  font-size: 0.8em;
+  line-height: 1.8;
+  text-decoration-color: black;
+}
+#copy-right{
+  font-style: italic;
+  font-size: 0.8em;
+  text-decoration-color: black;
+}
+#social-div{
+  display:inline;
+  text-decoration-color: black;
+}
 /************* FOOTER ********************/
+/*
 #contactme{
   background-color: black;
   text-decoration-color: white;
@@ -218,6 +304,7 @@ h3.project-title {
 #copy-right{
   color: whitesmoke;
 }
+*/
 /********************* END OF FOOTER ************/
 
 /************** MEDIA QUERRIES ****************/
