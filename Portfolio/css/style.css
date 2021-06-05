@@ -116,13 +116,13 @@ body, html{
   background-color: black;
   opacity: 0.5;
   border-radius: 5%;
-  padding-top: 10px;
+  padding-top: 25px;
   text-align: center;
 }
 td{
-  padding: 30px;
+  padding: 25px;
   border-bottom: 1px solid white;
-  text-size-adjust: 40px;
+  font-size: large;
 }
 #about{
   border-top: 1px solid white;
@@ -135,35 +135,14 @@ table{
 }
 
 /*************************** Link**********************/
-
-/*************************** List **********************/
-/*
-#list-menu{
-  background-color: black;
-  opacity: 0.5;
-  border-radius: 5%;
-}
-#list-menu{
-  padding-top: 20px;
-  text-align: center;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-  border: 1px solid dimgray;
-  border-radius: 5%;
+a:link, a:visited, a:hover, a:active{
+  color: white;
+  text-decoration: none;
+  background-color: transparent;
+  display: inline-block;
+  font-size: large;
 }
 
-ul li {
-  padding: 32px 48px;
-  border-bottom: 1px solid dimgray;
-  border-radius: 5%;
-}
-
-ul li:last-child {
-  border-bottom: none
-}
-*/
 /********************** My Projects *****************/
 #MyProjects{
   background-color: #f0f0f0;
@@ -254,60 +233,11 @@ div.row{
   display:inline;
   text-decoration-color: black;
 }
-/************* FOOTER ********************/
-/*
-#contactme{
-  background-color: black;
-  text-decoration-color: white;
-  margin-top: 40px;
-}
-.panel-footer{
-  margin-top: 0px;
-  padding-top: 0px;
-  padding-bottom:0px;
-  background-color: black;
-  border-top: 0;
-  color: white;
-}
 
-.panel-footer div.row{
-  margin-bottom: 0px;
-  color: white;
-  text-decoration-color: white;
-}
-#hours, #address{
-  line-height: 1.3em;
-  color: white;
-  text-decoration-color: white;
-}
-#contact > span, #address > span, #social > span{
-  font-size: 1.2em;
-  color: white;
-  text-decoration-color: white;
-}
-#address p{
-  color: white;
-  font-size: 0.8em;
-  line-height: 1.8;
-  text-decoration-color: white;
-}
-#testimonials{
-  font-style: italic;
-  color: white;
-  text-decoration-color: white;
-}
-#social-div{
-  display:inline;
-  color: white;
-  text-decoration-color: white;
-}
-#copy-right{
-  color: whitesmoke;
-}
-*/
 /********************* END OF FOOTER ************/
 
 /************** MEDIA QUERRIES ****************/
+
 /************** LARGE DEVICES ONLY ************/
 @media (min-width: 992px) {
   #head-name{
