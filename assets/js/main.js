@@ -76,27 +76,67 @@
   });
 
   // Navigation active state on scroll
-  var nav_sections = $('section');
-  var main_nav = $('.nav-menu, .mobile-nav');
+  // var nav_sections = $('section');
+  // var main_nav = $('.nav-menu, .mobile-nav');
 
-  $(window).on('scroll', function() {
-    var cur_pos = $(this).scrollTop() + 200;
+  // $(window).on('scroll', function() {
+  //   var cur_pos = $(this).scrollTop() + 200;
 
-    nav_sections.each(function() {
-      var top = $(this).offset().top,
-        bottom = top + $(this).outerHeight();
+  //   nav_sections.each(function() {
+  //     var top = $(this).offset().top,
+  //       bottom = top + $(this).outerHeight();
 
-      if (cur_pos >= top && cur_pos <= bottom) {
-        if (cur_pos <= bottom) {
-          main_nav.find('li').removeClass('active');
-        }
-        main_nav.find('a[href="#' + $(this).attr('id') + '"]').parent('li').addClass('active');
-      }
-      if (cur_pos < 300) {
-        $(".nav-menu ul:first li:first").addClass('active');
-      }
-    });
-  });
+  //     if (cur_pos >= top && cur_pos <= bottom) {
+  //       if (cur_pos <= bottom) {
+  //         main_nav.find('li').removeClass('active');
+  //       }
+  //       main_nav.find('a[href="#' + $(this).attr('id') + '"]').parent('li').addClass('active');
+  //     }
+  //     if (cur_pos < 300) {
+  //       $(".nav-menu ul:first li:first").addClass('active');
+  //     }
+  //   });
+  // });
+/**
+ * Easy selector helper function
+ */
+const select = (el, all = false) => {
+  el = el.trim()
+  if (all) {
+    return [...document.querySelectorAll(el)]
+  } else {
+    return document.querySelector(el)
+  }
+}
+
+/**
+ * Easy on scroll event listener 
+ */
+const onscroll = (el, listener) => {
+  el.addEventListener('scroll', listener)
+}
+
+/**
+ * Nav menu
+ */
+let navbarlinks = select('.nav-menu a, .mobile-nav a', true)
+const navbarlinksActive = () => {
+  let position = window.scrollY + 200
+  navbarlinks.forEach(navbarlink => {
+    if (!navbarlink.hash) return
+    let section = select(navbarlink.hash)
+    if (!section) return
+    if (position >= section.offsetTop && position <= (section.offsetTop + section.offsetHeight)) {
+      navbarlink.classList.add('active')
+      navbarlink.closest('li').classList.add('active')
+    } else {
+      navbarlink.classList.remove('active')
+      navbarlink.closest('li').classList.remove('active')
+    }
+  })
+}
+window.addEventListener('load', navbarlinksActive)
+onscroll(document, navbarlinksActive)
 
   // Back to top button
   $(window).scroll(function() {
@@ -188,6 +228,43 @@
   }
   $(window).on('load', function() {
     aos_init();
+  });
+
+  // Add this code at the end of your main.js file or replace the existing scroll detection code:
+
+  $(window).on('scroll', function() {
+    var cur_pos = $(this).scrollTop() + 200;
+    
+    // Special handling for the contact section which may be at the bottom
+    var contact_section = $('#contact');
+    var contact_top = contact_section.offset().top;
+    var contact_bottom = contact_top + contact_section.outerHeight();
+    var documentHeight = $(document).height();
+    
+    // Check if near bottom of page
+    if (cur_pos >= contact_top || cur_pos + $(window).height() > documentHeight - 100) {
+      $('.nav-menu ul li, .mobile-nav ul li').removeClass('active');
+      $('.nav-menu a[href="#contact"], .mobile-nav a[href="#contact"]').parent('li').addClass('active');
+      return;
+    }
+    
+    // Normal section detection for other sections
+    $('section').each(function() {
+      var top = $(this).offset().top;
+      var bottom = top + $(this).outerHeight();
+      var id = $(this).attr('id');
+      
+      if (cur_pos >= top && cur_pos <= bottom) {
+        $('.nav-menu ul li, .mobile-nav ul li').removeClass('active');
+        $('.nav-menu a[href="#' + id + '"], .mobile-nav a[href="#' + id + '"]').parent('li').addClass('active');
+      }
+    });
+    
+    // Ensure home is active when at the top
+    if (cur_pos < 300) {
+      $('.nav-menu ul li, .mobile-nav ul li').removeClass('active');
+      $('.nav-menu ul li:first-child, .mobile-nav ul li:first-child').addClass('active');
+    }
   });
 
 })(jQuery);
