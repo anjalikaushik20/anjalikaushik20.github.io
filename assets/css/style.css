@@ -392,7 +392,7 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Akills
+# Skills
 --------------------------------------------------------------*/
 .skills .progress {
   height: 50px;
@@ -443,7 +443,7 @@ section {
   font-weight: 700;
   margin-top: 20px;
   margin-bottom: 20px;
-  color: #050d18;
+  color: #173b6c;
 }
 
 .resume .resume-item {
@@ -649,6 +649,66 @@ section {
   line-height: 24px;
   font-size: 14px;
 }
+
+.services .university-title {
+  font-size: 26px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #173b6c;
+}
+
+/*--------------------------------------------------------------
+# Make Publications and Patents headings match Resume headings
+--------------------------------------------------------------*/
+.publications .resume-title {
+  font-size: 26px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #173b6c;
+}
+
+.publications .title {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.publications .title a {
+  color: #343a40;
+}
+
+.publications .title a:hover {
+  color: #149ddd;
+}
+
+/* Enhanced Publications spacing */
+.publications .authors-line {
+  margin: 15px 0 25px 0;  /* Increased bottom margin from 15px to 25px */
+  color: #555;
+  display: flex;
+  align-items: center;
+}
+
+.publications .patent-info {
+  margin: 15px 0 25px 0;  /* Match the same spacing for patent info */
+  color: #555;
+  display: flex;
+  align-items: center;
+}
+
+.publications .authors-line i, 
+.publications .patent-info i {
+  color: #149ddd;
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+/* 
+.publications .resume-item h4 {
+  text-transform: none;
+} */
 
 /*--------------------------------------------------------------
 # Testimonials
