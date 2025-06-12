@@ -337,25 +337,47 @@
         <div class="row">
           <div class="col-lg-6 col-md-6 icon-box" data-aos="fade-up">
             <div class="icon"><i class="icofont-robot"></i></div>
-            <h4 class="title"><a href="">Dynamic Programming in Cooperative Autonomous Assembly</a></h4>
+            <h4 class="title">Reinforcement Learning for Assembly Planning with the Burr Puzzle</h4>
             <p class="description">January 2025 - Present <br>
-              • Developing a novel offline reinforcement learning approach for multi-arm robotic assembly, overcoming geometric constraints like physics and potential collisions in complex structures like the Burr puzzle.<br>
-              • Using multi-agent dynamic programming to optimize force application and coordination, enabling successful assembly of complex structures.
+              • Developed an offline reinforcement learning pipeline to solve complex mechanical assembly tasks using the Burr Puzzle as a proxy for multi-part object assembly under physical constraints.<br>
+              • Designed a novel vertex-based action space enabling collision-free, gravity-aware assembly moves, and implemented a pruned n-step lookahead with greedy rollout for efficient planning.<br>
+              • Accelerated planning via Assembly-by-Disassembly strategy, reducing search complexity and achieving successful six-piece puzzle assembly with up to 35% fewer stages compared to traditional one-arm methods.
             </p>
           </div>
           
           <div class="col-lg-6 col-md-6 icon-box" data-aos="fade-up">
             <div class="icon"><i class="icofont-speed-meter"></i></div>
-            <h4 class="title"><a href="">Implementation of Flash Attention in CUDA</a></h4>
+            <h4 class="title">Implementation of Flash Attention in CUDA</h4>
             <p class="description">January 2025 - Present <br>
-              • Implementing Flash Attention for large language models (Lama 3), reducing inference latency and memory bandwidth through operator fusion and softmax tiling.<br>
+              • Implementing Flash Attention for large language models (Llama 3), reducing inference latency and memory bandwidth through operator fusion and SoftMax tiling.<br>
               • Using Triton compiler to create attention modules, minimizing HBM transfers and enhancing memory access, resulting in improved throughput.
             </p>
           </div>
           
           <div class="col-lg-6 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
+            <div class="icon"><i class="icofont-connection"></i></div>
+            <h4 class="title">Edge-Based Face Recognition Pipeline using AWS IoT Greengrass</h4>
+            <p class="description">April 2025 - May 2025 <br>
+              • Designed and deployed a distributed face recognition pipeline by integrating AWS IoT Greengrass, MQTT, Lambda, and SQS for low-latency edge processing.<br>
+              • Implemented real-time face detection on simulated IoT edge devices using MTCNN and Python components deployed via custom Greengrass components.<br>
+              • Enabled secure device-to-cloud communication by configuring AWS IoT Core policies, certificates, and MQTT bridges for message exchange.<br>
+              • Triggered cloud-based FaceNet-based face recognition via SQS queues and Lambda functions, maintaining a privacy-preserving and scalable architecture.
+            </p>
+          </div>
+          
+          <div class="col-lg-6 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
+            <div class="icon"><i class="icofont-server"></i></div>
+            <h4 class="title">Serverless Face Recognition Pipeline with AWS Lambda & ECR</h4>
+            <p class="description">March 2025 - April 2025 <br>
+              • Developed a face recognition service using AWS Lambda, Docker, and Elastic Container Registry (ECR) to enable serverless ML inference on streaming video frames.<br>
+              • Built and containerized custom Lambda functions for face detection (MTCNN) and recognition (FaceNet) with PyTorch models, deployed via ECR.<br>
+              • Integrated AWS SQS for decoupled communication between detection and recognition stages, ensuring scalability and low latency.
+            </p>
+          </div>
+          
+          <div class="col-lg-6 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
             <div class="icon"><i class="icofont-cloud-upload"></i></div>
-            <h4 class="title"><a href="">Cloud-Based Face Recognition System</a></h4>
+            <h4 class="title">Cloud-Based Face Recognition System Architecture and Optimization</h4>
             <p class="description">February 2025 - March 2025 <br>
               • Designed a scalable cloud-based face recognition system on AWS using S3, SQS, and dynamic EC2 instances for efficient image processing.<br>
               • Built a responsive Python web tier to handle HTTP requests, manage cloud storage, and coordinate communication between the UI and processing layer.<br>
@@ -364,27 +386,28 @@
             </p>
           </div>
           
-          <div class="col-lg-6 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-6 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
             <div class="icon"><i class="icofont-video-cam"></i></div>
-            <h4 class="title"><a href="">Self-Supervised Dense Point Tracking in Turbulent Videos</a></h4>
+            <h4 class="title">Self-Supervised Dense Point Tracking in Turbulent Videos</h4>
             <p class="description">August 2024 - December 2024 <br>
               • Developed a benchmark for point tracking in videos with induced atmospheric turbulence, enhancing the DINO-Tracker with RAFT-based optical flow refinement.<br>
+              • Diagnosed robustness gaps in DINO-Tracker, revealing a 32% average-Jaccard drop under moderate turbulence and mapping failure modes in occluded, high-blur frames.<br>
               • Estimated the strength of turbulence using the trajectories of points in the turbulent videos.
             </p>
           </div>
           
-          <div class="col-lg-6 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-lg-6 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
             <div class="icon"><i class="icofont-medical-sign"></i></div>
-            <h4 class="title"><a href="">Swin Transformer for Vision Tasks</a></h4>
+            <h4 class="title">Swin Transformer for Vision Tasks</h4>
             <p class="description">August 2024 - December 2024 <br>
               • Used Swin Transformer for classification, localization, and segmentation on ChestXRay14, NODE21, and ChexMask datasets to optimize pipelines and improve performance in medical image analysis.<br>
               • Achieved 72.64% accuracy training a model from scratch and 81.78% accuracy fine-tuning on ImageNet for ChestXRay14 classification.
             </p>
           </div>
           
-          <div class="col-lg-6 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-lg-6 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
             <div class="icon"><i class="icofont-search-document"></i></div>
-            <h4 class="title"><a href="">Comparative Study of Video Retrieval Methods</a></h4>
+            <h4 class="title">Comparative Study of Video Retrieval Methods</h4>
             <p class="description">August 2024 - December 2024 <br>
               • Implemented dimensionality reduction techniques (PCA, SVD, LDA, K-Means) on ResNet, HOG, HOF, and Color Histogram feature spaces to rank and retrieve videos based on similarity.<br>
               • Developed centroid-based ranking and label prediction models, achieving improved retrieval accuracy and demonstrating SVD's effectiveness in preserving latent structures.
@@ -392,7 +415,7 @@
           </div>
         </div>
 
-        <!-- VIT Bhopal University Projects -->
+        <!-- VIT Bhopal University Projects - Keep as is -->
         <div class="university-header mt-5" data-aos="fade-up">
           <h3 class="university-title">VIT Bhopal University, Bhopal, India</h3>
         </div>
@@ -479,6 +502,7 @@
         </div>
       </div>
     </section><!-- End Services Section -->
+
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
       <div class="container">
