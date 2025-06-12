@@ -74,6 +74,50 @@ section .container > *:last-child {
 .info-box:last-child, .resume-item:last-child, .services .icon-box:last-child, .publications .resume-item:last-child {
   margin-bottom: 0;
 }
+
+/* Project image styling */
+.img-container {
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.services .row.mb-4 {
+  margin-bottom: 2rem;
+}
+
+.services .icon-box {
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  .services .row.mb-4 {
+    flex-direction: column;
+  }
+  
+  .services .row.mb-4 .col-lg-6:first-child {
+    margin-bottom: 1rem;
+  }
+}
+
+/* Add to your CSS file */
+.img-container img[src*="lung-mass.jpg"] {
+  max-height: 280px; /* Adjust as needed */
+  width: auto;
+}
+
+/* Ensure proper spacing between GIFs on smaller screens */
+@media (max-width: 576px) {
+  .services .row .col-lg-6 .row .col-lg-6:first-child {
+    margin-bottom: 15px;
+  }
+}
+
+/* Ensure GIFs have consistent height */
+.services .row .col-lg-6 .row .img-container img {
+  height: 200px;
+  object-fit: contain;
+}
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
