@@ -280,6 +280,236 @@ section .container > *:last-child {
   width: 100%;
   height: 100%;
 }
+
+/* Publications Section */
+.publications .publication-item {
+  background: #fff;
+  padding: 25px;
+  margin-bottom: 30px;
+  border-radius: 6px;
+  box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.12);
+  transition: all 0.3s ease-in-out;
+  border-bottom: 3px solid #fff;
+  height: 100%;
+}
+
+.publications .publication-item:hover {
+  transform: translateY(-5px);
+  border-color: #149ddd;
+}
+
+.publications .publication-item h4 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #173b6c;
+  margin-bottom: 10px;
+}
+
+.publications .authors-line {
+  font-style: italic;
+  color: #6c757d;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.publications .publication-links {
+  margin-top: 15px;
+}
+
+.publications .publication-links .btn-link {
+  margin-right: 10px;
+  display: inline-block;
+  padding: 6px 12px;
+  background: rgba(20, 157, 221, 0.1);
+  color: #149ddd;
+  border-radius: 4px;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.publications .publication-links .btn-link:hover {
+  background: #149ddd;
+  color: #fff;
+}
+
+/* Patents Section */
+.patents {
+  padding: 60px 0;
+  background: #f5f8fd;
+}
+
+.patents .patent-item {
+  background: #fff;
+  padding: 30px;
+  border-radius: 6px;
+  box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.12);
+  transition: all 0.3s ease-in-out;
+  border-bottom: 3px solid #fff;
+}
+
+.patents .patent-item:hover {
+  transform: translateY(-5px);
+  border-color: #149ddd;
+}
+
+.patents .patent-item h4 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #173b6c;
+  margin-bottom: 15px;
+}
+
+.patents .patent-info {
+  color: #6c757d;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.patents .patent-description {
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.patents .patent-status {
+  margin-top: 20px;
+  text-align: right;
+}
+
+.patents .status-badge {
+  display: inline-block;
+  padding: 5px 15px;
+  border-radius: 30px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.patents .status-badge.pending {
+  background: #ffeeba;
+  color: #856404;
+}
+
+.patents .status-badge.granted {
+  background: #c3e6cb;
+  color: #155724;
+}
+
+/* Make rows equal height */
+.publications .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.publications .row > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.publications .publication-item {
+  flex: 1;
+}
+
+/* Responsive adjustments */
+@media (max-width: 991px) {
+  .publications .publication-item {
+    margin-bottom: 20px;
+  }
+}
+
+
+/* Conference info styling to match patent info */
+.publications .conference-info {
+  color: #6c757d;
+  font-weight: 500;
+  margin-bottom: 15px;
+  font-size: 15px;
+}
+
+.publications .conference-info i,
+.patents .patent-info i {
+  margin-right: 5px;
+  color: #149ddd;
+}
+
+/* Ensure consistent styling between patents and publications */
+.publications .publication-item,
+.patents .patent-item {
+  background: #fff;
+  padding: 25px;
+  border-radius: 6px;
+  box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.12);
+  transition: all 0.3s ease-in-out;
+  border-bottom: 3px solid #fff;
+}
+
+.publications .publication-item:hover,
+.patents .patent-item:hover {
+  transform: translateY(-5px);
+  border-color: #149ddd;
+}
+
+/* Publications and Patents styling */
+.conference-info,
+.patent-info {
+  color: #6c757d;
+  font-weight: 500;
+  margin-bottom: 15px;
+  font-size: 15px;
+}
+
+.conference-info i,
+.patent-info i {
+  margin-right: 5px;
+  color: #149ddd;
+}
+
+.publications .publication-item,
+.patents .patent-item {
+  background: #fff;
+  padding: 25px;
+  border-radius: 6px;
+  box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.12);
+  transition: all 0.3s ease-in-out;
+  border-bottom: 3px solid #fff;
+  height: 100%;
+}
+
+.publications .publication-item:hover,
+.patents .patent-item:hover {
+  transform: translateY(-5px);
+  border-color: #149ddd;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 5px 15px;
+  border-radius: 30px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.status-badge.pending {
+  background: #ffeeba;
+  color: #856404;
+}
+
+/* Make rows equal height */
+.publications .row,
+.patents .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.publications .row > div,
+.patents .row > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.publications .publication-item,
+.patents .patent-item {
+  flex: 1;
+}
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
