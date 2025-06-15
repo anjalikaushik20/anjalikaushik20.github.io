@@ -142,6 +142,144 @@ section .container > *:last-child {
   bottom: 1px;
   left: calc(50% - 60px);
 }
+
+/* Make images clickable without the plus icon */
+.img-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 6px;
+  box-shadow: 0 0 15px 0 rgba(68, 88, 144, 0.12);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.img-container:hover {
+  box-shadow: 0 0 25px 0 rgba(68, 88, 144, 0.25);
+}
+
+.img-container img {
+  transition: all 0.3s;
+  width: 100%;
+  height: auto;
+}
+
+.img-container:hover img {
+  transform: scale(1.05);
+}
+
+/* Remove the old plus icon */
+.portfolio-links {
+  display: none;
+}
+
+/* Add a subtle overlay effect on hover */
+.img-container a {
+  display: block;
+  position: relative;
+}
+
+.img-container a::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(20, 157, 221, 0.1);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.img-container:hover a::after {
+  opacity: 1;
+}
+
+/* Add a zoom cursor indicator */
+.img-container a {
+  cursor: zoom-in;
+}
+
+/* Adjusted size for Burr Puzzle GIFs */
+.burr-puzzle-gif {
+  min-height: 180px;
+  max-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: #f7f7f7;
+  border: 1px solid #eaeaea;
+}
+
+.burr-puzzle-gif img {
+  max-height: 170px;
+  width: auto;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.burr-puzzle-gif:hover img {
+  transform: scale(1.05);
+}
+
+/* Align Burr Puzzle GIFs vertically on the right */
+.project-images {
+  height: 100%;
+}
+
+.burr-puzzle-gif {
+  min-height: 150px;
+  max-height: 170px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: #f7f7f7;
+  border: 1px solid #eaeaea;
+}
+
+.burr-puzzle-gif img {
+  max-height: 140px;
+  width: auto;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+/* Responsive adjustments */
+@media (max-width: 991px) {
+  .project-images {
+    margin-top: 20px;
+  }
+  
+  .burr-puzzle-gif {
+    margin-bottom: 15px !important;
+  }
+}
+
+/* Consistent sizing for Video Retrieval images */
+.video-retrieval-img {
+  height: 150px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: #f7f7f7;
+  border: 1px solid #eaeaea;
+}
+
+.video-retrieval-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Make sure both images have the same dimensions regardless of content */
+.video-retrieval-img a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
