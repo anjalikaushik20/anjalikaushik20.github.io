@@ -118,6 +118,30 @@ section .container > *:last-child {
   height: 200px;
   object-fit: contain;
 }
+
+/* Update category titles to match Publications style */
+
+.category-title {
+  font-size: 26px;
+  font-weight: 500;
+  color: #173b6c;
+  padding: 0 0 8px 0;
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.category-title::before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 1px;
+  background: #ddd;
+  bottom: 1px;
+  left: calc(50% - 60px);
+}
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
