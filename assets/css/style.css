@@ -670,7 +670,45 @@ section .container > *:last-child {
 }
 
 .technical-expertise {
-  margin-top: 20px;
+  padding: 20px;
+  margin-top: 15px;
+}
+
+.technical-expertise .info-title {
+  margin-bottom: 15px;
+  padding-bottom: 8px;
+}
+
+.technical-expertise .skill-category {
+  margin-bottom: 10px;
+}
+
+.technical-expertise .skill-title {
+  font-size: 15px;
+  margin-bottom: 8px;
+}
+
+.technical-expertise .skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.technical-expertise .skill-tag {
+  background: rgba(20, 157, 221, 0.1);
+  color: #149ddd;
+  font-size: 12px;
+  padding: 5px 10px;
+  border-radius: 20px;
+  display: inline-block;
+  transition: all 0.3s;
+}
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+  .technical-expertise .row > div:not(:last-child) .skill-category {
+    margin-bottom: 15px;
+  }
 }
 
 .skills-container {
